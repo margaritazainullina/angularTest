@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "author": "Author 1",
+  "title": "Exception Handling",
+  "article": "Use a decorator, at config time using the $provide service, on the $exceptionHandler service to perform custom actions when exceptions occur.Why?: Provides a consistent way to handle uncaught Angular exceptions for development-time or run-time.Note: Another option is to override the service instead of using a decorator. This is a fine option, but if you want to keep the default behavior and extend it a decorator is recommended.",
+  "date": "1414608622920"
+}

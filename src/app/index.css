@@ -1,0 +1,40 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+}
+
+.thumbnail img.pull-right {
+  width: 50px;
+}
+
+.articlerow {
+  border: 3px rgb(179, 179, 179) solid;
+  padding: 10px;
+  margin: 5px 0;
+  background: rgb(231, 231, 231);
+}
+
+.text {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.info {
+  color: darkgray;
+  font-style: italic;
+  text-align: right;
+}
+
+.ng-valid {
+  background: palegreen;
+}
+
+.ng-invalid {
+  background: pink;
+}

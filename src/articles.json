@@ -1,0 +1,23 @@
+[
+  {
+    "id":1,
+    "author": "Author 1",
+    "title": "Exception Handling",
+    "article": "Use a decorator, at config time using the $provide service, on the $exceptionHandler service to perform custom actions when exceptions occur.Why?: Provides a consistent way to handle uncaught Angular exceptions for development-time or run-time.Note: Another option is to override the service instead of using a decorator. This is a fine option, but if you want to keep the default behavior and extend it a decorator is recommended.",
+    "date": "1414608622920"
+  },
+  {
+    "id":2,
+    "author": "Author 2",
+    "title": "Routes",
+    "article": "Separate configuration for a module into its own file named after the module. A configuration file for the main app module is named app.config.js (or simply config.js). A configuration for a module named admin.module.js is named admin.config.js.",
+    "date": "1429999622920"
+  },
+  {
+    "id":3,
+    "author": "Author 3",
+    "title": "Locate",
+    "article": "Why?: I find this to be super important for a project. If the team cannot find the files they need to work on quickly, they will not be able to work as efficiently as possible, and the structure needs to change. You may not know the file name or where its related files are, so putting them in the most intuitive locations and near each other saves a ton of time. A descriptive folder structure can help with this.",
+    "date": "1438008622920"
+  }
+]

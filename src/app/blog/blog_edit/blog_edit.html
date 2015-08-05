@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+      <form name="form1" novalidate ng-controller="FormController"
+            ng-model="blog.article"
+            ng-submit="submit()">
+        <h1 name="title" contenteditable="true" ng-model="blog.article.title" required>{{blog.article.title}}</h1>
+
+        <div name="article" class="text" contenteditable="true"
+             ng-model="blog.article.article" required> {{blog.article.article}}
+        </div>
+        <div name="author" class="info" contenteditable="true" ng-model="blog.article.author" required>{{blog.article.author}}</div>
+        <div name="date" class="info" contenteditable="true" ng-model="blog.article.date" required>{{blog.article.date |
+          date:'medium'}}
+        </div>
+
+        <input type="submit" value="Send Text" ng-disabled="form1.$invalid">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--form name="form1">
+  <input type="text" name="input1" ng-model="model1" validation/>
+  <span ng-show="form1.input1.$error.model1"></span>
+</form>
+
+<form name="LovelyForm" novalidate ng-controller="FormController" ng-submit="submit()">
+  <input type="text" name="LovelyText" placeholder="Some Text 1" ng-model="text1" required/>
+  <input type="text" name="LovelyText2" placeholder="Some Text 2" ng-model="text2" required/>
+  <input type="text" name="LovelyText3" placeholder="Some Text 3" ng-model="text3" required/>
+  <input type="submit" value="Send Text" ng-disabled="LovelyForm.$invalid">
+</form-->

@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "author": "Author 2",
+  "title": "Routes",
+  "article": "Separate configuration for a module into its own file named after the module. A configuration file for the main app module is named app.config.js (or simply config.js). A configuration for a module named admin.module.js is named admin.config.js.",
+  "date": "1429999622920"
+}
