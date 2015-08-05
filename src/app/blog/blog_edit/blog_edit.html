@@ -1,9 +1,8 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-10">
-      <form name="form1" novalidate ng-controller="FormController"
-            ng-model="blog.article"
-            ng-submit="submit()">
+      <form name="form1" novalidate
+            ng-submit="blog.submit()">
         <h1 name="title" contenteditable="true" ng-model="blog.article.title" required>{{blog.article.title}}</h1>
 
         <div name="article" class="text" contenteditable="true"

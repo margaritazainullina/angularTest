@@ -14,6 +14,14 @@
       },
       update: {
         url: '/articles/:id.json/edit',
+        method: 'PUT'
+      },
+      delete: {
+        url: '/articles/:id.json/delete',
+        method: 'DELETE'
+      },
+      create: {
+        url: '/articles/create',
         method: 'POST'
       }
     });

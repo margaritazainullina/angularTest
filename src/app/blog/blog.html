@@ -1,15 +1,19 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-2">
-      <!--Sidebar content-->
-
-      Search: <input novalidate ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="title" >Alphabetical</option>
-        <option value="date">Newest</option>
-      </select>
-
+      <form class="pure-form pure-form-aligned">
+        <div class="pure-control-group">
+          <label for="search"> Search: </label>
+          <input id="search" ng-model="query">
+        </div>
+        <div class="pure-control-group">
+          <label for="sort"> Sort by:</label>
+          <select id="sort" ng-model="orderProp">
+            <option value="title">Alphabetical</option>
+            <option value="date">Newest</option>
+          </select>
+        </div>
+      </form>
     </div>
     <div class="col-md-10">
       <!--Body content-->
@@ -18,11 +22,13 @@
         <h1><a ui-sref="blogView({id:article.id})">{{article.title}}</a></h1>
         <a ui-sref="blogDelete({id:article.id})">Delete</a>
         <a ui-sref="blogEdit({id:article.id})">[edit]</a>
+
         <div class="text">{{article.article}}</div>
         <div class="info">{{article.author}}</div>
         <div class="info">{{article.date | date:'medium'}}</div>
       </div>
-
     </div>
   </div>
+
+  <a ui-sref="blogCreate()">New article</a>
 </div>

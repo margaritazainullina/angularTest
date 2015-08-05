@@ -38,3 +38,6 @@
 .ng-invalid {
   background: pink;
 }
+.ng-pristine{
+  background: #f5f5f5;
+}

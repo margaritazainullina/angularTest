@@ -20,6 +20,12 @@
         controller: 'BlogListController',
         controllerAs: 'blog'
       })
+      .state('blogCreate', {
+        url: '/blog/create',
+        templateUrl: 'app/blog/blog_create/blog_create.html',
+        controller: 'BlogCreateController',
+        controllerAs: 'blog'
+      })
       .state('blogView', {
         url: '/blog/:id',
         templateUrl: 'app/blog/blog_view/blog_view.html',
@@ -32,9 +38,10 @@
         controller: 'BlogEditController',
         controllerAs: 'blog'
       })
+
       .state('blogDelete', {
         url: '/blog/:id/delete',
-        templateUrl: 'app/blog/blog_edit/blog_edit.html',
+        templateUrl: 'app/blog/blog.html',
         controller: 'BlogDeleteController',
         controllerAs: 'blog'
       })
